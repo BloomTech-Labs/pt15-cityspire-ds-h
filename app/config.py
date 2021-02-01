@@ -1,9 +1,8 @@
 class Settings(BaseSettings):
 
     api_key: SecretStr 
-    host: str
-    pollution_api_key: SecretStr 
-    openweathermap_api: SecretStr 
+    host: str    
+    walk_api: str
     
     class Config:
         env_file = ".env"
